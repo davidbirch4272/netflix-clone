@@ -1,10 +1,13 @@
-import React from ' react';
+import React from 'react';
 import './App.css';
+import HomeScreen from './components/HomeScreen';
+import Nav from './components/Nav';
 
 function App() {
   return (
-    <div className="App">
-     <h1>Let's build Netflix</h1>
+    <div className="app">
+     <Nav />
+     <HomeScreen />
     </div>
   );
 }
