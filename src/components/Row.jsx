@@ -9,7 +9,7 @@ const base_url = "https://image.tmdb.org/t/p/original/"
 
 useEffect(() =>{
      async function FetchData() {
-    const request = await axios.get(fetchUrl)
+     const request = await axios.get(`${base_url}${fetchUrl}`);
     setMovies(request.data.results);
     return request;    
 }
