@@ -4,8 +4,14 @@ import Nav from "../components/Nav";
 import { useSelector } from "react-redux";
 import { selectUser } from "../features/userSlice";
 import { getAuth, signOut } from "firebase/auth";
+import PlansScreen from "./PlansScreen";
 
-//Time Stamp:  2:44:02 is where you stopped...
+//Timestamp:  3:21:14 to 3:30:02 is a really big mess.  
+//Timestamp:  3:38:52 once you get done with the above timestamp mess...
+//Timestamp:  just before 4:03:26 is something that you should check out once you get things going. 
+//Timestamp:  04:05:32 is something else you are going to have to do as well. 
+//Timestamp:  04:20:06 npm build and then firebase deploy click app 
+//TimeStamp:  You stopped at the end of the video.   
 
 function ProfileScreen() {
   const user = useSelector(selectUser)
@@ -35,6 +41,7 @@ function ProfileScreen() {
             <h2>{user.email}</h2>
             <div className="profileScreen__plans">
               <h3>Plans</h3>
+              <PlansScreen />              
               <button onClick={handleSignOut}
               className="profileScreen__signOut">SignOut</button>
             </div>
